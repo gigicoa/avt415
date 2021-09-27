@@ -1,0 +1,41 @@
+body{background: #BEAE95;
+font-family: Rambla;}
+
+h1{
+  font-family: Rambla;
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+line-height: 86px;
+letter-spacing: 0em;
+text-align: center;
+}
+.home{
+  img{position: absolute;
+  width: 439px;
+  height: 319px;
+
+  background: url(cold brew.jpg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 37px;}
+}
+
+.horchata{
+  position: absolute;
+  width: 439px;
+  height: 319px;
+
+  background: url(horchata.jpg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 37px;
+}
+
+.pumpkin{
+  position: absolute;
+  width: 439px;
+  height: 319px;
+
+  background: url(pumpkin.jpg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 37px;
+}
