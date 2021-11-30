@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<!--Head section contains information about the page-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, intial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Giselle Aparicio">
+  <meta name="description" content="Assignment 4: Working with Javascript">
+  <meta name="keywords" content="jquery, javascript">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="jquery-ui.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>	
+	
+ <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#anim" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+    });
+  } );
+  </script>
+	
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+	
+<script>
+  $( function() {
+    $( "#resizable" ).resizable();
+  } );
+  </script>
+
+<script>
+  $( function() {
+    $( "input" ).checkboxradio();
+  } );
+  </script>
+	
+<script>
+  $( function() {
+    $( "#sortable" ).sortable();
+  } );
+  </script>
+
+  <title>Assignment 4: Working with Javascript</title>
+</head>
+
+<body>
+<!--Body section contains content displayed in the web browser window-->
+<h1>Assignment 4: Working with Javascript</h1>
+
+<p>Here are 5 examples of jQuery UI components</p>
+
+<h2> Example 1: Datepicker</h2>
+	
+<p>Date: <input type="text" id="datepicker" size="30"></p>
+	
+<br>	
+ 
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+	
+<br>
+	
+<div id="resizable" class="ui-widget-content">
+  <h3 class="ui-widget-header">Resizable</h3>
+</div>	
+	
+<br>
+	
+<div class="widget">
+  <h2>Checkbox nested in label</h2>
+  <fieldset>
+    <legend>Bed Type: </legend>
+    <label for="checkbox-nested-1">2 Double
+      <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1">
+    </label>
+    <label for="checkbox-nested-2">2 Queen
+      <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2">
+    </label>
+    <label for="checkbox-nested-3">1 Queen
+      <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+    </label>
+    <label for="checkbox-nested-4">1 King
+      <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4">
+    </label>
+  </fieldset>
+</div>	
+
+<br>
+<ul id="sortable">
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+</ul>
+	
+	
+</body>
+
+</html>
